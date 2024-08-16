@@ -1,3 +1,13 @@
+/*----------------------------------------------------------
+ * Lab #1: DinoSets
+ * Implementation of the DinoSet class.
+ *
+ * Date: 23-Aug-2024
+ * Authors:
+ *           A01770771 Kamala Khan
+ *           A01777771 Carol Danvers
+ *----------------------------------------------------------*/
+
 #pragma once
 
 const int total_dinos = 8;
@@ -21,6 +31,24 @@ public:
     {
         int index = static_cast<int>(id);
         _dino[index] = true;
+    }
+
+    bool contains(DinoId id) const
+    {
+        int index = static_cast<int>(id);
+        return _dino[index];
+    }
+
+    DinoSet operator+(const DinoSet& other) const
+    {
+        DinoSet result;
+        for (int i = 0; i < total_dinos; i++) {
+            DinoId id = static_cast<DinoId>(i);
+            if (contains(id) or other.contains(id)) {
+                result.add(id);
+            }
+        }
+        return result;
     }
 
     std::string to_string() const

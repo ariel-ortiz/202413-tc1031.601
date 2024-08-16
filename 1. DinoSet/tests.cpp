@@ -21,34 +21,34 @@ TEST_CASE("test the DinoSet class")
     //         == "{tyrannosaurus, procompsognathus, pteranodon}");
     // }
 
-    // SECTION("test contains") {
-    //     REQUIRE_FALSE(a.contains(DinoId::velociraptor));
-    //     REQUIRE_FALSE(a.contains(DinoId::stegosaurus));
-    //     REQUIRE_FALSE(a.contains(DinoId::tyrannosaurus));
-    //     REQUIRE_FALSE(a.contains(DinoId::procompsognathus));
-    //     REQUIRE_FALSE(a.contains(DinoId::triceratops));
-    //     REQUIRE_FALSE(a.contains(DinoId::pachycephalosaurus));
-    //     REQUIRE_FALSE(a.contains(DinoId::parasaurolophus));
-    //     REQUIRE_FALSE(a.contains(DinoId::pteranodon));
+    SECTION("test contains") {
+        REQUIRE_FALSE(a.contains(DinoId::velociraptor));
+        REQUIRE_FALSE(a.contains(DinoId::stegosaurus));
+        REQUIRE_FALSE(a.contains(DinoId::tyrannosaurus));
+        REQUIRE_FALSE(a.contains(DinoId::procompsognathus));
+        REQUIRE_FALSE(a.contains(DinoId::triceratops));
+        REQUIRE_FALSE(a.contains(DinoId::pachycephalosaurus));
+        REQUIRE_FALSE(a.contains(DinoId::parasaurolophus));
+        REQUIRE_FALSE(a.contains(DinoId::pteranodon));
 
-    //     REQUIRE(b.contains(DinoId::velociraptor));
-    //     REQUIRE_FALSE(b.contains(DinoId::stegosaurus));
-    //     REQUIRE(b.contains(DinoId::tyrannosaurus));
-    //     REQUIRE_FALSE(b.contains(DinoId::procompsognathus));
-    //     REQUIRE_FALSE(b.contains(DinoId::triceratops));
-    //     REQUIRE_FALSE(b.contains(DinoId::pachycephalosaurus));
-    //     REQUIRE_FALSE(b.contains(DinoId::parasaurolophus));
-    //     REQUIRE_FALSE(b.contains(DinoId::pteranodon));
+        REQUIRE(b.contains(DinoId::velociraptor));
+        REQUIRE_FALSE(b.contains(DinoId::stegosaurus));
+        REQUIRE(b.contains(DinoId::tyrannosaurus));
+        REQUIRE_FALSE(b.contains(DinoId::procompsognathus));
+        REQUIRE_FALSE(b.contains(DinoId::triceratops));
+        REQUIRE_FALSE(b.contains(DinoId::pachycephalosaurus));
+        REQUIRE_FALSE(b.contains(DinoId::parasaurolophus));
+        REQUIRE_FALSE(b.contains(DinoId::pteranodon));
 
-    //     REQUIRE_FALSE(c.contains(DinoId::velociraptor));
-    //     REQUIRE_FALSE(c.contains(DinoId::stegosaurus));
-    //     REQUIRE(c.contains(DinoId::tyrannosaurus));
-    //     REQUIRE(c.contains(DinoId::procompsognathus));
-    //     REQUIRE_FALSE(c.contains(DinoId::triceratops));
-    //     REQUIRE_FALSE(c.contains(DinoId::pachycephalosaurus));
-    //     REQUIRE_FALSE(c.contains(DinoId::parasaurolophus));
-    //     REQUIRE(c.contains(DinoId::pteranodon));
-    // }
+        REQUIRE_FALSE(c.contains(DinoId::velociraptor));
+        REQUIRE_FALSE(c.contains(DinoId::stegosaurus));
+        REQUIRE(c.contains(DinoId::tyrannosaurus));
+        REQUIRE(c.contains(DinoId::procompsognathus));
+        REQUIRE_FALSE(c.contains(DinoId::triceratops));
+        REQUIRE_FALSE(c.contains(DinoId::pachycephalosaurus));
+        REQUIRE_FALSE(c.contains(DinoId::parasaurolophus));
+        REQUIRE(c.contains(DinoId::pteranodon));
+    }
 
     // SECTION("test size") {
     //     REQUIRE(a.size() == 0);
