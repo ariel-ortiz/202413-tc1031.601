@@ -1,3 +1,5 @@
+// Ejemplo básico de apuntadores
+
 #include <iostream>
 
 int main()

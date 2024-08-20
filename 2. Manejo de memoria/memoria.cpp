@@ -1,3 +1,5 @@
+// Ejemplo de uso de diversas secciones de memoria.
+
 #include <iostream>
 
 int global_x = 42;
