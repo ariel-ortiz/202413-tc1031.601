@@ -1,12 +1,18 @@
 CC=g++
 
-all: apuntador memoria
+all: apuntador memoria lifetimes dinamica
 
 apuntador: apuntador.cpp
-	g++ apuntador.cpp -o apuntador
+	$(CC) apuntador.cpp -o apuntador
 
 memoria: memoria.cpp
-	g++ memoria.cpp -o memoria
+	$(CC) memoria.cpp -o memoria
+
+lifetimes: lifetimes.cpp
+	$(CC) lifetimes.cpp -o lifetimes
+
+dinamica: dinamica.cpp
+	$(CC) dinamica.cpp -o dinamica
 
 clean:
-	rm -f apuntador memoria
+	rm -f apuntador memoria lifetimes dinamica
