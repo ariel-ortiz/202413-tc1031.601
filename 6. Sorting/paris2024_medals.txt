@@ -4,17 +4,17 @@ Canada 9 7 11
 China 40 27 24
 France 16 26 22
 Germany 12 13 8
-Great Britain 14 22 29
+Great_Britain 14 22 29
 Greece 1 1 6
 Guatemala 1 0 1
 Italy 12 13 15
-Ivory Coast 0 0 1
+Ivory_Coast 0 0 1
 Japan 20 12 13
 Mexico 0 3 2
 Netherlands 15 7 12
 Peru 0 0 1
 Qatar 0 0 1
 Uganda 1 1 0
-United States 40 44 42
+United_States 40 44 42
 Uzbekistan 8 2 3
 Zambia 0 0 1
