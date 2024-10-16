@@ -1,10 +1,7 @@
 #include <algorithm>
-#include <cstdlib>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
-#include <sstream>
-#include <vector>
 
 struct Country {
     std::string name;
@@ -22,14 +19,12 @@ void read_file(const std::string& file_name, std::vector<Country>& values)
         std::exit(1);
     }
 
-    std::string line;
-    while (std::getline(file, line)) {
+    while (!file.eof()) {
         Country c;
-        std::istringstream input(line);
-        input >> c.name;
-        input >> c.gold;
-        input >> c.silver;
-        input >> c.bronze;
+        file >> c.name;
+        file >> c.gold;
+        file >> c.silver;
+        file >> c.bronze;
         values.push_back(c);
     }
 
