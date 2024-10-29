@@ -20,7 +20,8 @@ int binary_search(const std::vector<T>& data, T value)
     int max = data.size() - 1;
 
     while (min <= max) {
-        int mid = (min + max) / 2;
+        // int mid = (min + max) / 2;
+        int mid = (max - min) / 2 + min;
         if (value == data.at(mid)) {
             return mid;
         } else if (value < data.at(mid)) {
