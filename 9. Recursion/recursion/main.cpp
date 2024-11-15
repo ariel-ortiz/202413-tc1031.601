@@ -21,5 +21,7 @@ int main()
     std::cout << "sum(a) = " << sum(a) << "\n";
     std::cout << "duplicate(a) = " << duplicate(a) << "\n";
     std::cout << "last(a) = " << last(a) << "\n";
+    std::cout << merge(IntList {4, 15, 23, 42} , IntList {8, 16}) << "\n";
+    std::cout << binary(256) << "\n";
     return 0;
 }
