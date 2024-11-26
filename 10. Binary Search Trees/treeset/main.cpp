@@ -27,5 +27,11 @@ int main()
     std::cout << "\n";
     b.inorder(suma_codigos);
     std::cout << suma << "\n";
+    b.levelorder(imprime_char);
+    std::cout << "\n";
+    std::cout << "b.height() = " << b.height() << "\n";
+    std::cout << "b.is_full() = " << b.is_full() << "\n";
+    std::cout << "b.leaf_count() = " << b.leaf_count() << "\n";
+    std::cout << "b.is_perfect() = " << b.is_perfect() << "\n";
     return 0;
 }
